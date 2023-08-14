@@ -19,20 +19,36 @@ class WindHumidityCard extends StatelessWidget {
           borderRadius: const BorderRadius.all(const Radius.circular(20.0)),
           color: Color.fromRGBO(255, 255, 255, 0.25),
         ),
-        child: Column(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Padding(
-              padding:
-                  EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 10),
-              child: Util.getItem(
-                  CupertinoIcons.wind, wind!.toInt(), ' m/s', 'Слабый ветер'),
+            Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(left: 10, top: 10, bottom: 10),
+                  child:
+                      Util.getIcons(CupertinoIcons.wind, CupertinoIcons.drop),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(0),
+                  child: Util.getValues(wind!.toInt(), ' m/s', humidity!, '%'),
+                ),
+              ],
             ),
             Padding(
-              padding:
-                  EdgeInsets.only(left: 20, right: 20, top: 10, bottom: 20),
-              child: Util.getItem(
-                  CupertinoIcons.drop, humidity!, '%', 'Высокая влажность'),
-            ),
+              padding: EdgeInsets.all(5),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('Слабый ветер',
+                      style: TextStyle(
+                          color: Colors.white)), //или направление ветра указать
+                  SizedBox(height: 10),
+                  Text('Высокая влажность',
+                      style: TextStyle(color: Colors.white)),
+                ],
+              ),
+            )
           ],
         ),
       ),

@@ -38,7 +38,6 @@ class _WeatherScreenState extends State<WeatherScreen> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         automaticallyImplyLeading: false,
-        leading: Row(),
         actions: [
           Row(
             children: [

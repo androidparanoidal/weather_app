@@ -27,4 +27,34 @@ class Util {
       ],
     );
   }
+
+  static getIcons(IconData iconData1, IconData iconData2) {
+    return Column(
+      children: [
+        Icon(iconData1, color: Colors.white),
+        SizedBox(height: 10),
+        Icon(iconData2, color: Colors.white),
+      ],
+    );
+  }
+
+  static getValues(int value1, String units1, int value2, String units2) {
+    return Column(
+      children: [
+        Row(
+          children: [
+            Text('  $value1', style: TextStyle(color: Colors.grey)),
+            Text('$units1', style: TextStyle(color: Colors.grey)),
+          ],
+        ),
+        SizedBox(height: 15),
+        Row(
+          children: [
+            Text('  $value2', style: TextStyle(color: Colors.grey)),
+            Text('$units2', style: TextStyle(color: Colors.grey)),
+          ],
+        ),
+      ],
+    );
+  }
 }
