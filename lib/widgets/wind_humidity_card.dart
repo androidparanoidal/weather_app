@@ -25,7 +25,7 @@ class WindHumidityCard extends StatelessWidget {
             Row(
               children: [
                 Padding(
-                  padding: EdgeInsets.only(left: 10, top: 10, bottom: 10),
+                  padding: EdgeInsets.only(top: 10, bottom: 10),
                   child:
                       Util.getIcons(CupertinoIcons.wind, CupertinoIcons.drop),
                 ),

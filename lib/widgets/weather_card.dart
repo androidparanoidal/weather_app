@@ -22,10 +22,10 @@ class WeatherCard extends StatelessWidget {
             Stack(
               alignment: Alignment.center,
               children: [
-                Image.asset('images/Ellipse.png', width: 150, fit: BoxFit.fill),
+                Image.asset('images/Ellipse.png', width: 100, fit: BoxFit.fill),
                 Image.network(
                   icon!,
-                  scale: 0.5,
+                  scale: 0.6,
                   color: Colors.white,
                 ),
               ],

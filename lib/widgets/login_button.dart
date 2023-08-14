@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/constants.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
 class LoginButton extends StatelessWidget {
   LoginButton({@required this.onTapMethod});

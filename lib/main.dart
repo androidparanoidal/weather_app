@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/screens/login_screen.dart';
-import 'package:weather_app/screens/weather_screen.dart';
 import 'package:weather_app/screens/welcome_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -17,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LoginScreen(),
+      home: WelcomeScreen(),
     );
   }
 }

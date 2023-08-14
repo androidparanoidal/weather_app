@@ -35,7 +35,8 @@ class _LoginScreenState extends State<LoginScreen> {
         context: context,
         builder: (BuildContext context) => AlertDialog(
           title: Text('Внимание!'),
-          content: const Text('Введенные данные неверные'),
+          content: const Text(
+              'Введенные данные неверные'), // или отсутствует подключение к интернету
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context, 'OK'),
