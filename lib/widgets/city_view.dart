@@ -18,7 +18,7 @@ class _CityViewState extends State<CityView> {
   @override
   Widget build(BuildContext context) {
     late Future<WeatherModel> forecastObject;
-    // late String _cityName;
+    late String _cityName;
 
     var city = widget.snapshot.data?.city?.name;
     var country = widget.snapshot.data?.city?.country;

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/screens/city_search_screen.dart';
 import 'package:weather_app/screens/login_screen.dart';
 import 'package:weather_app/screens/weather_screen.dart';
 import 'package:weather_app/screens/welcome_screen.dart';
@@ -18,12 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        textTheme: TextTheme(
-            //subtitle1: TextStyle(color: Colors.black),
-            ),
-      ),
-      home: WelcomeScreen(),
+      home: LoginScreen(),
     );
   }
 }

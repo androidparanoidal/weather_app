@@ -36,6 +36,7 @@ class WeatherAPI {
 
     if (response.statusCode == 200) {
       //parsing model
+      print('Succes!');
       return WeatherModel.fromJson(json.decode(response.body));
     } else {
       throw Future.error('Error response');

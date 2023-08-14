@@ -231,7 +231,7 @@ class Rain {
   Rain({this.d3h});
 
   Rain.fromJson(Map<String, dynamic> json) {
-    d3h = json['3h'];
+    d3h = json['3h'].toDouble();
   }
 
   Map<String, dynamic> toJson() {
@@ -311,8 +311,8 @@ class Coord {
   Coord({this.lat, this.lon});
 
   Coord.fromJson(Map<String, dynamic> json) {
-    lat = json['lat'];
-    lon = json['lon'];
+    lat = json['lat'].toDouble();
+    lon = json['lon'].toDouble();
   }
 
   Map<String, dynamic> toJson() {
