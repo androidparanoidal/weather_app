@@ -1,6 +1,6 @@
 # weather_app
 
-A new Flutter project.
+Результаты находятся в папке result
 
 ## Getting Started
 
